@@ -8,7 +8,7 @@
  */
 
 // set system name & version
-define('SYS_NAME', 'H_O)E');
+define('SYS_NAME', 'H_O_E');
 define('SYS_VER', '3.7');
 
 
@@ -6321,8 +6321,8 @@ COMMIT;
 
 
   // flush multi_queries
-  do {
-  } while (mysqli_more_results($db) && mysqli_next_result($db));
+  //do {
+  //} while (mysqli_more_results($db) && mysqli_next_result($db));
 
 
   // update system settings

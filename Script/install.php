@@ -8,7 +8,7 @@
  */
 
 // set system name & version
-define('SYS_NAME', 'Sngine');
+define('SYS_NAME', 'H_O)E');
 define('SYS_VER', '3.7');
 
 
@@ -46,15 +46,15 @@ if (isset($_POST['submit'])) {
 
 
   // check valid purchase code
-  // try {
-    // $licence_key = get_licence_key($_POST['purchase_code']);
-    // if (is_empty($_POST['purchase_code']) || $licence_key === false) {
-      // _error("Error", "Please enter a valid purchase code");
-    // }
-    // $session_hash = $licence_key;
-  // } catch (Exception $e) {
-    // _error("Error", $e->getMessage());
-  // }
+  try {
+    $licence_key = get_licence_key($_POST['purchase_code']);
+    if (is_empty($_POST['purchase_code']) || $licence_key === false) {
+      _error("Error", "Please enter a valid purchase code");
+    }
+    $session_hash = $licence_key;
+  } catch (Exception $e) {
+    _error("Error", $e->getMessage());
+  }
 
 
   // connect to the db
@@ -6718,7 +6718,7 @@ COMMIT;
         if (currentIndex == 0) {
           if (!wizard.find("#license-checkbox").is(':checked')) {
             wizard.find("#license-checkbox").addClass("is-invalid");
-            return true;
+            return false;
           }
         }
         /* check requirements errors */

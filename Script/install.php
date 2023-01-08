@@ -6321,8 +6321,8 @@ COMMIT;
 
 
   // flush multi_queries
-  //do {
-  //} while (mysqli_more_results($db) && mysqli_next_result($db));
+  do {
+  } while (mysqli_more_results($db) && mysqli_next_result($db));
 
 
   // update system settings

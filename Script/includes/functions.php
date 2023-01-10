@@ -2992,11 +2992,11 @@ function get_picture($picture, $type)
         break;
 
       case '1':
-        $picture = $system['system_url'] . '/content/themes/' . $system['theme'] . '/images/blank_profile_male.svg';
+        $picture = $system['system_url'] . '/content/themes/' . $system['theme'] . '/images/blank_profile_male.png';
         break;
 
       case '2':
-        $picture = $system['system_url'] . '/content/themes/' . $system['theme'] . '/images/blank_profile_female.svg';
+        $picture = $system['system_url'] . '/content/themes/' . $system['theme'] . '/images/blank_profile_female.png';
         break;
 
       default:
